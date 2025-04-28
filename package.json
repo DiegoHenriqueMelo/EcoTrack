@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Plataforma de Gestão de Sustentabilidade Corporativa",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npx tsc && node --watch build/index.js"
   },
@@ -16,10 +17,12 @@
     "url": "https://github.com/DiegoHenriqueMelo/EcoTrack/issues"
   },
   "homepage": "https://github.com/DiegoHenriqueMelo/EcoTrack#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "typescript": "^5.8.3"
+  },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "tsc": "^2.0.4",
-    "typescript": "^5.8.3"
+    "express": "^5.1.0"
   }
 }

@@ -30,6 +30,10 @@ registrerUser.addEventListener('click', async (event) => {
     
         const DATA = await RESPONSE.json();
         console.log(DATA);
+
+        let login = localStorage.setItem("Login", body.user_name);
+
+        document.location.href = './home.html'
     }else{
         alert("Senhas não conferem, favor verificar se as senhas são iguais");
         event.preventDefault();

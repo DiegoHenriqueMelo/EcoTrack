@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./login.js" defer></script>
     <title>EcoTrack - Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
+      <div>
+        <h1>Seja bem-vindo ao EcoTrack!</h1>
+        <p>Facilite sua gestão de sustentabilidade corporativa.</p>
+      </div>
+      <div id="div-form">
         <form method="post">
-            <label for="user_name">Nome</label>
-            <input type="text" name="user_name" id="user_name">
-            <label for="birthday_date">Data de nascimento</label>
-            <input type="date" name="birthday_date" id="birthday_date">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="user_password">Senha</label>
-            <input type="password" name="user_password" id="user_password">
-            <label for="user_password">Confirmar Senha</label>
-            <input type="password" name="user_password" id="user_password_confirmed">
-            <button type="submit" id="registrerUser">Cadastrar</button>
+          <label for="user_name">Nome *</label>
+          <input type="text" name="user_name" id="user_name"  required/>
+          <label for="birthday_date">Data de nascimento *</label>
+          <input type="date" name="birthday_date" id="birthday_date"  required/>
+          <label for="email">E-mail *</label>
+          <input type="email" name="email" id="email"  required/>
+          <label for="user_password">Senha *</label>
+          <input type="password" name="user_password" id="user_password"  required/>
+          <label for="user_password">Confirmar Senha *</label>
+          <input
+            type="password"
+            name="user_password"
+            id="user_password_confirmed"
+          />
+          <button type="submit" id="registrerUser">Cadastrar</button>
         </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>

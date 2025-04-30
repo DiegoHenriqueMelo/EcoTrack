@@ -1,3 +1,3 @@
 import * as Server from "./server/server.js";
-
-Server.SERVER(3000);
+const PORT = Number(process.env.PORT);
+Server.SERVER(PORT);
